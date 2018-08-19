@@ -77,9 +77,12 @@
         <!-- COMPLETED! Refer to the preview image to see what we will be building here: we need a container of some kind to hold a JSON export of our article. Ideally this container would show only a incipit (short preview) of the JSON and also be clickable to allow easy selection of the text it holds. What kind of element could we use for this? -->
 
         <!-- read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it) -->
-        <input id="json-output" class="pull-right" for="article-json">
-          <input type="text" readonly id="article-json"> When finalized, copy the above JSON, and paste into blogArticle.js
-        </input>
+        <!-- <input id="json-output" class="pull-right" for="article-json" />
+          <input type="text" readonly id="article-json"/> When finalized, copy the above JSON, and paste into blogArticle.js -->
+          <input id="json-output" for="article-json" type="text" readonly/>
+          <p id="article-json" class="pull-right">When finalized, copy the above JSON, and paste into blogArticle.js</p>
+
+
       </section>
 
     </main>
